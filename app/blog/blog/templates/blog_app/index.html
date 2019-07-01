@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Index page</title>
-</head>
-<body>
+{% extends "base.html" %}
+	
+{% block main %}
 	{% for name in names %}
 		<h1>Пошёл нахуй, {{name}}</h1>
 	{% endfor %}
-</body>
-</html>
+{% endblock main %}
+ 
+ {% block title %}
+ 	Особенно нахуй, {{random_name}}!
+ {% endblock title %}
