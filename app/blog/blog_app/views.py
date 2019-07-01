@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from random import choice
 # Create your views here.
 
 
 def post_list(requset):
-    return HttpResponse('Hello there')
+    n = ['Завер', 'Павел', 'Олег', 'Артём', 'Серёга']
+    return render(requset, 'blog_app/index.html', context={'names': n})
