@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 	
 {% block main %}
-	{% for name in names %}
-		<h1>Пошёл нахуй, {{name}}</h1>
+	<h1 class="mt-5 mb-5"> Список пидорасов:</h1>
+	{% for color, name in values.items %}
+		<h4 class="{{color}}">Пошёл нахуй, {{name}}</h4>
 	{% endfor %}
 {% endblock main %}
  
